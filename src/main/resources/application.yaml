@@ -1,0 +1,12 @@
+logging:
+  config: classpath:log4j2.xml
+spring:
+  main:
+    web-application-type: NONE
+
+activemq:
+  broker:
+    connector: "tcp://localhost:61616"
+jms:
+  input:
+    queue: "jmsComponent:queue:inputqueue"
