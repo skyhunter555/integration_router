@@ -1,18 +1,18 @@
 # Service for testing Spring Integration with ActiveMQ 
 Library name: integration-router
 
-  В примере создается одна входящая очередь (jmsComponent:queue:inputqueue)
-и две исходящих очереди (jmsComponent:queue:orderoutputqueue и jmsComponent:invoiceoutputqueue)
-для разных типов документов.
-При отправке сообщения в виде XML файла проводиться проверка типа документа "docType".
-В зависимости от значени "order" или "invoice", сообщение отправляется в первую или во вторую исходящую очередь.
-Отправляется по 100 сообщений каждого типа.
+  Р’ РїСЂРёРјРµСЂРµ СЃРѕР·РґР°РµС‚СЃСЏ РѕРґРЅР° РІС…РѕРґСЏС‰Р°СЏ РѕС‡РµСЂРµРґСЊ (jmsComponent:queue:inputqueue)
+Рё РґРІРµ РёСЃС…РѕРґСЏС‰РёС… РѕС‡РµСЂРµРґРё (jmsComponent:queue:orderoutputqueue Рё jmsComponent:invoiceoutputqueue)
+РґР»СЏ СЂР°Р·РЅС‹С… С‚РёРїРѕРІ РґРѕРєСѓРјРµРЅС‚РѕРІ.
+РџСЂРё РѕС‚РїСЂР°РІРєРµ СЃРѕРѕР±С‰РµРЅРёСЏ РІ РІРёРґРµ XML С„Р°Р№Р»Р° РїСЂРѕРІРѕРґРёС‚СЊСЃСЏ РїСЂРѕРІРµСЂРєР° С‚РёРїР° РґРѕРєСѓРјРµРЅС‚Р° "docType".
+Р’ Р·Р°РІРёСЃРёРјРѕСЃС‚Рё РѕС‚ Р·РЅР°С‡РµРЅРё "order" РёР»Рё "invoice", СЃРѕРѕР±С‰РµРЅРёРµ РѕС‚РїСЂР°РІР»СЏРµС‚СЃСЏ РІ РїРµСЂРІСѓСЋ РёР»Рё РІРѕ РІС‚РѕСЂСѓСЋ РёСЃС…РѕРґСЏС‰СѓСЋ РѕС‡РµСЂРµРґСЊ.
+РћС‚РїСЂР°РІР»СЏРµС‚СЃСЏ РїРѕ 100 СЃРѕРѕР±С‰РµРЅРёР№ РєР°Р¶РґРѕРіРѕ С‚РёРїР°.
 
-После обработки сообщений в логе выводиться информация:
+РџРѕСЃР»Рµ РѕР±СЂР°Р±РѕС‚РєРё СЃРѕРѕР±С‰РµРЅРёР№ РІ Р»РѕРіРµ РІС‹РІРѕРґРёС‚СЊСЃСЏ РёРЅС„РѕСЂРјР°С†РёСЏ:
 ******** SELECTED INVOICE OUTPUT QUEUE FOR DOCTYPE: invoice
 ******** SELECTED ORDER OUTPUT QUEUE FOR DOCTYPE: order
 
-Ссылки на использованную документацию:
+РЎСЃС‹Р»РєРё РЅР° РёСЃРїРѕР»СЊР·РѕРІР°РЅРЅСѓСЋ РґРѕРєСѓРјРµРЅС‚Р°С†РёСЋ:
 https://docs.spring.io/spring-integration/docs/5.1.0.M1/reference/html/messaging-routing-chapter.html
 https://docs.spring.io/spring-boot/docs/2.0.x/reference/html/boot-features-messaging.html
 https://springframework.guru/spring-boot-example-of-spring-integration-and-activemq/
