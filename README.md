@@ -15,7 +15,9 @@ Library name: integration-router
 ******** SELECTED ORDER OUTPUT QUEUE FOR DOCTYPE: order
 
 Ссылки на использованную документацию:
+
 https://github.com/spring-projects/spring-amqp/
+
 https://www.rabbitmq.com/tutorials/tutorial-four-spring-amqp.html
 
 ## Example
