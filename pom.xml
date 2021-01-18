@@ -59,13 +59,13 @@
             <version>2.11.1</version>
         </dependency>
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-jms</artifactId>
+            <groupId>org.springframework.integration</groupId>
+            <artifactId>spring-integration-jms</artifactId>
             <version>5.1.4.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.integration</groupId>
-            <artifactId>spring-integration-jms</artifactId>
+            <artifactId>spring-integration-amqp</artifactId>
             <version>5.1.4.RELEASE</version>
         </dependency>
         <dependency>
@@ -74,14 +74,9 @@
             <version>2.8.0</version>
         </dependency>
         <dependency>
-            <groupId>org.apache.activemq</groupId>
-            <artifactId>activemq-broker</artifactId>
-            <version>5.16.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.activemq</groupId>
-            <artifactId>activemq-kahadb-store</artifactId>
-            <version>5.16.0</version>
+            <groupId>org.springframework.amqp</groupId>
+            <artifactId>spring-rabbit</artifactId>
+            <version>2.2.14.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
