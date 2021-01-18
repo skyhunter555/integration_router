@@ -141,11 +141,11 @@ public class JmsConfig {
                     final String xmlPayload = new String(payload, Charset.defaultCharset());
                     try {
                         RoutingDocument document = xmlMapper().readValue(xmlPayload, RoutingDocument.class);
-                        if (DocumentTypeEnum.order.name().equals(document.getDocType())) {
+                        if (DocumentTypeEnum.order.equals(document.getDocType())) {
                             LOG.info(String.format("******** SELECTED ORDER OUTPUT QUEUE FOR DOCTYPE: %s", document.getDocType()));
                             rabbitTemplate().convertAndSend(queueOutputOrderName, xmlPayload);
                         }
-                        if (DocumentTypeEnum.invoice.name().equals(document.getDocType())) {
+                        if (DocumentTypeEnum.invoice.equals(document.getDocType())) {
                             LOG.info(String.format("******** SELECTED INVOICE OUTPUT QUEUE FOR DOCTYPE: %s", document.getDocType()));
                             rabbitTemplate().convertAndSend(queueOutputInvoiceName, xmlPayload);
                         }
